@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #87CEEB; /* Sky blue background */
+    font-family: Arial, sans-serif;
+}
+
+#game {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    background: url('nepali_forest.jpg') no-repeat center/cover;
+    border: 5px solid #3e8b3e;
+    border-radius: 8px;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+#crow {
+    position: absolute;
+    left: 50px;
+    top: 200px;
+    width: 40px;
+    height: 40px;
+    background: url('crow.png') no-repeat center/cover;
+    transition: transform 0.1s;
+}
+
+.bamboo {
+    position: absolute;
+    width: 60px;
+    background: #8b5a2b;
+}
+
+.bamboo.top {
+    top: 0;
+}
+
+.bamboo.bottom {
+    bottom: 0;
+}
+
+#gameOverScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#getReady {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#credit {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    font-weight: bold;
+}
+
